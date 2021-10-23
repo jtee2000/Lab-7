@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-color@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-interpolate@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-axis@3"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="index.js" defer type="module"></script>
+</head>
+<body>
+    <h1>Airport Connections</h1>
+    <form>
+        <input type="radio" name="pick" value="force"> Force
+        <input type="radio" name="pick" value="map"> Map
+    </form>  
+    <div id="tooltip" class="hidden">
+        <p><span id="value"></span></p>
+    </div>
+</body>
+</html>
